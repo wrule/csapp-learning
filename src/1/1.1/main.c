@@ -2,8 +2,9 @@
 #include "../../lib/binary.h"
 
 int main() {
-  printf("你好，世界\n");
   int64_t num = 256;
   printBinary(&num, sizeof(num));
+  char *text = "0123456";
+  printBinary(text, 8);
   return 0;
 }
