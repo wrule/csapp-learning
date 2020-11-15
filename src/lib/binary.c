@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "binary.h"
 
 const int ByteBinSize = 8;
 
-void printByteBinary(unsigned char byte) {
+void printByteBinary(uint8_t byte) {
   int binCodes[ByteBinSize];
   for (int i = 0; i < ByteBinSize; ++i) {
     binCodes[i] = byte >> i & 0x01;
@@ -19,7 +19,7 @@ void printByteBinary(unsigned char byte) {
 }
 
 void printBinary(void *pt, int size) {
-  const unsigned char *bytePt = pt;
+  const uint8_t *bytePt = pt;
   for (int i = 0; i < size; ++i) {
     unsigned char byte = *(bytePt + i);
     printByteBinary(byte);

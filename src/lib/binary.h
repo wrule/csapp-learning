@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdint.h>
 
-void printByteBinary(unsigned char byte);
+void printByteBinary(uint8_t byte);
 void printBinary(void * pt, int size);
