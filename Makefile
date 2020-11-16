@@ -4,3 +4,6 @@ clear:
 	rm main
 dev: 1.1
 	./main
+
+amdahl_law:
+	gcc src/amdahl_law/main.c -o main
