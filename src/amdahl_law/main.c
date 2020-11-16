@@ -21,15 +21,22 @@ void testB() {
   printf("%.4lf\n", normalSpeed * k);
 }
 
+void testC() {
+  double dst = 2;
+  double a = 0.8;
+  printf("%.4lf\n", a_amdahl_law(a, dst));
+}
+
 int main() {
   // testA();
   // testB();
+  // testC();
   printf("请输入部件耗时占比[0~1]: ");
   double a = 0;
   scanf("%lf", &a);
   printf("请输入加速比例因子: ");
   double k = 0;
   scanf("%lf", &k);
-  printf("系统加速比为: %.4lf\n", amdahl_law(0.6, 3.0));
+  printf("系统加速比为: %.4lf\n", amdahl_law(a, k));
   return 0;
 }
