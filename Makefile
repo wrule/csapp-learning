@@ -8,3 +8,7 @@ dev: 1.1
 amdahl_law:
 	gcc src/amdahl_law/*.c -o main
 	./main
+
+2.27:
+	gcc src/2/2.7/main.c -o main
+	./main
