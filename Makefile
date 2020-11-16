@@ -6,4 +6,5 @@ dev: 1.1
 	./main
 
 amdahl_law:
-	gcc src/amdahl_law/main.c -o main
+	gcc src/amdahl_law/*.c -o main
+	./main
