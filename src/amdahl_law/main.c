@@ -9,6 +9,6 @@ int main() {
   scanf("%lf", &k);
   double result = 0;
   result = 1 / ((1 - a) + (a / k));
-  printf("系统加速比为: %lf\n", result);
+  printf("系统加速比为: %.4lf\n", result);
   return 0;
 }
